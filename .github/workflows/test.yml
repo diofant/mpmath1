@@ -25,13 +25,13 @@ jobs:
         python -We:invalid -m compileall -f mpmath -q
         pycodestyle
     - name: Tests
-      run: pytest
+      run: pytest mpmath
     - name: Run coverage tests & upload results
       env:
         PYTEST_ADDOPTS: --cov mpmath
       if: matrix.python-version == 2.7 || matrix.python-version == 3.6
       run: |
-        pytest
+        pytest mpmath
         codecov --required
     - name: Building docs
       if: matrix.python-version > 3
