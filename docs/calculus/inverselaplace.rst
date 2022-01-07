@@ -27,7 +27,7 @@ de Hoog, Knight & Stokes algorithm
 .. autoclass:: mpmath.calculus.inverselaplace.deHoog
    :members:
 
-Manual approach 
+Manual approach
 ...............
 
 It is possible and sometimes beneficial to re-create some of the
