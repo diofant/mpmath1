@@ -211,7 +211,6 @@ def testit(line):
 if __name__ == '__main__':
     from multiprocessing import Pool
     mapf = Pool(None).map
-    print("Running tests with multiprocessing")
     t1 = clock()
     tasks = cases.splitlines()
     mapf(testit, tasks)
